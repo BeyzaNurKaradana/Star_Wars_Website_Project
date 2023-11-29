@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-image: url(background.jpg);
+  background-size: cover;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.img-center,
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.logo-sw {
+  max-width: 35%;
+  height: auto;
+}
+
+.btn-show {
+  color: white;
+  background-color: green;
+  padding: 15px 25px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0px 8px #999;
+}
+
+.btn-hide {
+  color: white;
+  background-color: red;
+  padding: 15px 25px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0px 8px #999;
+}
+
+.btn-show:hover {
+  background-color: rgb(127, 209, 127);
+}
+
+.btn-show:active {
+  background-color: rgb(127, 209, 127);
+  box-shadow: 0 5px #666;
+  transform: translateY(3px);
+}
+
+.btn-hide:hover {
+  background-color: rgb(199, 86, 86);
+}
+
+.btn-hide:active {
+  background-color: rgb(199, 86, 86);
+  box-shadow: 0 5px #666;
+  transform: translateY(3px);
+}
+
+.hide {
+  display: none;
+}
+
+.list-group-item:first-child {
+  place-self: center;
+}
+
+.img-fluid {
+  height: 300px;
+}
+
+.display-flex {
+  display: flex;
+}
